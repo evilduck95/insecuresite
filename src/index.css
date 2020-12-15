@@ -10,6 +10,7 @@ body {
 }
 
 .background {
+  position: relative;
   background-color: #557799;
   background-image: url("media/coding-bg.jpg");
   background-repeat: no-repeat;
@@ -17,7 +18,29 @@ body {
   height: 100vh;
 }
 
-.blurred {
+.contained {
+  position: absolute;
+}
+
+#important-dates {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  height: 70vh;
+  width: 60vw;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.MuiDataGrid-colCellTitleContainer, .MuiDataGrid-cell {
+  font-size: 20px;
+}
+
+.MuiDataGrid-columnsContainer {
+  background-color: rgba(30, 35, 38, 0.8);
+  color: white;
+}
+
+.blurred-layer {
   height: 100vh;
 }
 
