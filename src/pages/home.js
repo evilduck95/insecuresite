@@ -9,6 +9,9 @@ const HomePage = () => {
     return (
         <div>
             <FrankyNavbar/>
+            <div  className="background">
+                <div className="blurred"></div>
+            </div>
         </div>
     )
 
