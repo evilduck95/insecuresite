@@ -22,13 +22,19 @@ body {
   position: absolute;
 }
 
-#important-dates {
+.table-title {
+  margin-left: 20px;
+  font-size: 3vh;
+
+}
+
+.important-dates {
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
-  height: 70vh;
+  /* height: 30vh; */
   width: 60vw;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .MuiDataGrid-colCellTitleContainer, .MuiDataGrid-cell {
