@@ -17,7 +17,7 @@ const appliedCSRows = [
 ];
 
 const aiRows = [
-    { id: 4, strand: 'Artificial Intelligence', task: 'Small K-NN Exercise', deadline: '04/12/2021', percent: '10%'},
+    { id: 4, strand: 'Artificial Intelligence', task: 'Small K-NN Exercise', deadline: '04/12/2020', percent: '10%'},
     { id: 5, strand: 'Artificial Intelligence', task: 'Scientific Report', deadline: '17/02/2021', percent: '40%'},
     { id: 6, strand: 'Artificial Intelligence', task: 'Class Test', deadline: '29/01/2021', percent: '50%'},
 ];
