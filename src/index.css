@@ -10,12 +10,13 @@ body {
 }
 
 .background {
+  overflow: auto;
   position: relative;
   background-color: #557799;
   background-image: url("media/coding-bg.jpg");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  height: 100vh;
+  /* height: 200vh; */
 }
 
 .contained {
@@ -28,14 +29,40 @@ body {
 
 }
 
+
+
 .important-dates {
-  background-color: rgba(255, 255, 255, 0.9);
-  font-size: 20px;
-  /* height: 30vh; */
-  width: 60vw;
-  margin: auto;
-  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
 }
+.table thead th {
+  border-bottom-color: #BBBBBB;
+}
+.table-bordered td {
+  border: 1px solid #A0A0A0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1000px) {
+  .important-dates {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+  .important-dates {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    width: 60vw;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .table th {
+    padding: .5rem;
+  }
+}
+
 
 .MuiDataGrid-colCellTitleContainer, .MuiDataGrid-cell {
   font-size: 20px;
