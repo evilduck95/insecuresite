@@ -13,7 +13,7 @@ const FrankyNavbar = (props) => {
                 <Nav>
                     {/* {props.hideJeffbot || <Nav.Link href='/jeffbot'>Jeffbot Coming Soon</Nav.Link>} */}
                     <NavDropdown title='Matlab'>
-                        <NavDropdown.Item href='https://uk.mathworks.com/learn/tutorials/matlab-onramp.html'>Learn the Basics</NavDropdown.Item>
+                        <NavDropdown.Item href='https://uk.mathworks.com/learn/tutorials/matlab-onramp.html'>Onramp</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Nav className='ml-auto'>
