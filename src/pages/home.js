@@ -25,7 +25,7 @@ const aiRows = [
 const dataAnalyticsRows = [
     { id: 7, strand: 'Chi Squared Assignment', task: 'Automate Calculation of ChiSqr', deadline: '09/12/2020', percent: '5%'},
     { id: 8, strand: 'Data Analytics Portfolio', task: 'Provided Portfolio or Titanic Dataset', deadline: '29/01/2021', percent: '50%'},
-    { id: 9, strand: 'Data Analytics Quiz', task: 'Online Quiz', deadline: '09/12/2020', percent: '45%'},
+    { id: 9, strand: 'Data Analytics Quiz', task: 'Online Quiz', deadline: '01-05/02/2021', percent: '45%'},
 ];
 
 const generateTable = (name, columns, data) => {
