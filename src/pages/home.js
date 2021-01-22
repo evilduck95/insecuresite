@@ -70,6 +70,7 @@ const HomePage = () => {
                     {generateTable("Applied Computer Science", columns, appliedCSRows)}
                     {generateTable("Artificial Intelligence", columns, aiRows)}
                     {generateTable("Data Analytics", columns, dataAnalyticsRows)}
+                    {generateTable("Virtual Reality", columns, vrRows)}
             </div>
         </div>
     );
