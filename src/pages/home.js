@@ -28,6 +28,10 @@ const dataAnalyticsRows = [
     { id: 9, strand: 'Data Analytics Quiz', task: 'Online Quiz', deadline: '01-05/02/2021', percent: '45%'},
 ];
 
+const vrRows = [
+    {id: 10, strand: 'Virtual Reality', task: 'VR Project', deadline: 'Sometime in April', percent: '100%'}
+]
+
 const generateTable = (name, columns, data) => {
     return(
         <div class="important-dates">
