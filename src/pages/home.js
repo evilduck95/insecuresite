@@ -32,6 +32,16 @@ const vrRows = [
     {id: 10, strand: 'Virtual Reality', task: 'VR Project', deadline: 'Sometime in April', percent: '100%'}
 ]
 
+const bigDataRows = [
+    {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: 'Unknown as of 02/02/2021', percent: '75%'},
+    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '25%'}
+]
+
+const iotRows = [
+    {id: 13, strand: 'IoT', task: 'IoT Project', deadline: 'Unknown as of 02/02/2021', percent: '100%'}
+]
+
+
 const generateTable = (name, columns, data) => {
     return(
         <div class="important-dates">
@@ -67,10 +77,12 @@ const HomePage = () => {
         <div className="background">
             <div className="blurred-layer">
                 <FrankyNavbar/>
-                    {generateTable("Applied Computer Science", columns, appliedCSRows)}
+                    {generateTable("Internet of Things", columns, iotRows)}
+                    {generateTable("Big Data", columns, bigDataRows)}
+                    {generateTable("Virtual Reality", columns, vrRows)}
                     {generateTable("Artificial Intelligence", columns, aiRows)}
                     {generateTable("Data Analytics", columns, dataAnalyticsRows)}
-                    {generateTable("Virtual Reality", columns, vrRows)}
+                    {generateTable("Applied Computer Science", columns, appliedCSRows)}
             </div>
         </div>
     );
