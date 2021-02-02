@@ -33,12 +33,13 @@ const vrRows = [
 ]
 
 const bigDataRows = [
-    {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: 'Unknown as of 02/02/2021', percent: '75%'},
-    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '25%'}
+    {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: 'Unknown as of 02/02/2021', percent: '50%'},
+    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '50%'}
 ]
 
 const iotRows = [
-    {id: 13, strand: 'IoT', task: 'IoT Project', deadline: 'Unknown as of 02/02/2021', percent: '100%'}
+    {id: 13, strand: 'IoT', task: 'IoT Project', deadline: 'Unknown as of 02/02/2021', percent: '75%'},
+    {id: 14, strand: 'IoT', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '25%'}
 ]
 
 
