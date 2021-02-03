@@ -12,7 +12,7 @@ const columns = [
 ];
 const appliedCSRows = [
     { id: 1, strand: 'Programming', task: '5 Exercises (Matlab, Asymptotic Complexity)', deadline: '17/02/2021', percent: '100%'},
-    { id: 2, strand: 'Applied CS', task: '2 Exercises (Computational Complexity and Metaheuristics Reports)', deadline: '27/01/2021', percent: '50%'},
+    { id: 2, strand: 'Applied CS', task: '2 Exercises (Computational Complexity and Metaheuristics Reports)', deadline: '17/02/2021', percent: '50%'},
     { id: 3, strand: 'Applied CS', task: 'Class Test', deadline: '22/01/2021', percent: '50%'},
 ];
 
