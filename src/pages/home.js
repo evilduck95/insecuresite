@@ -25,7 +25,7 @@ const aiRows = [
 const dataAnalyticsRows = [
     { id: 7, strand: 'Chi Squared Assignment', task: 'Automate Calculation of ChiSqr', deadline: '09/12/2020', percent: '5%'},
     { id: 8, strand: 'Data Analytics Portfolio', task: 'Provided Portfolio or Titanic Dataset', deadline: '29/01/2021', percent: '50%'},
-    { id: 9, strand: 'Data Analytics Quiz', task: 'Online Quiz', deadline: '01-05/02/2021', percent: '45%'},
+    { id: 9, strand: 'Data Analytics Quiz', task: 'Online Quiz', deadline: '05/02/2021', percent: '45%'},
 ];
 
 const vrRows = [
@@ -56,14 +56,37 @@ const generateTable = (name, columns, data) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.map((row) => 
-                        <tr>
-                            <td>{row.strand}</td>
-                            <td>{row.task}</td>
-                            <td>{row.deadline}</td>
-                            <td>{row.percent}</td>
-                        </tr>
-                    )}
+                    {data.map((row) => {
+                        const dateParts = row.deadline.split("/");
+                        const parsedDeadline = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+                        const enableRow = !row.deadline.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/) || parsedDeadline > Date.now();
+                        const daysUntil = Math.abs(parsedDeadline - Date.now()) / (1000 * 60 * 60 * 24);
+                        const isSoon = (!isNaN(daysUntil) && daysUntil < 8);
+                        const isImminent = (!isNaN(daysUntil) && daysUntil < 5);
+                        console.log(row.deadline, daysUntil, isSoon, isImminent, enableRow);
+                        const styling = {
+                        };
+                        if(enableRow) {
+                            if(isImminent) {
+                                row.deadline += " Within 4 days!";
+                                styling.backgroundColor = 'rgba(255, 50, 50, 0.9)';
+                            } else if(isSoon) {
+                                row.deadline += " Within 1 Week!";
+                                styling.backgroundColor = 'rgba(200, 150, 0, 0.5)';
+                            }    
+                        } else {
+                            styling.textDecoration = 'line-through';
+                            styling.backgroundColor = 'rgba(150, 50, 50)';
+                        }
+                        return (
+                            <tr style={styling}>
+                                <td>{row.strand}</td>
+                                <td>{row.task}</td>
+                                <td>{row.deadline}</td>
+                                <td>{row.percent}</td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </Table>
         </div>
