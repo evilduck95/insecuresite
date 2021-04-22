@@ -29,17 +29,17 @@ const dataAnalyticsRows = [
 ];
 
 const vrRows = [
-    {id: 10, strand: 'Virtual Reality', task: 'VR Project', deadline: 'Sometime in April', percent: '100%'}
+    {id: 10, strand: 'Virtual Reality', task: 'VR Project', deadline: '24/05/2021', percent: '100%'}
 ]
 
 const bigDataRows = [
-    {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: 'Unknown as of 02/02/2021', percent: '50%'},
-    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '50%'}
+    {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: '24/05/2021', percent: '50%'},
+    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 22/04/2021', percent: '50%'}
 ]
 
 const iotRows = [
-    {id: 13, strand: 'IoT', task: 'IoT Project', deadline: 'Unknown as of 02/02/2021', percent: '75%'},
-    {id: 14, strand: 'IoT', task: 'Class Test', deadline: 'Unknown as of 02/02/2021', percent: '25%'}
+    {id: 13, strand: 'IoT', task: 'IoT Project', deadline: '24/05/2021', percent: '75%'},
+    {id: 14, strand: 'IoT', task: 'Class Test', deadline: 'Unknown as of 22/04/2021', percent: '25%'}
 ]
 
 
