@@ -112,9 +112,9 @@ const HomePage = () => {
                     {generateTable("Internet of Things", columns, iotRows)}
                     {generateTable("Big Data", columns, bigDataRows)}
                     {generateTable("Virtual Reality", columns, vrRows)}
-                    {generateTable("Artificial Intelligence", columns, aiRows)}
-                    {generateTable("Data Analytics", columns, dataAnalyticsRows)}
-                    {generateTable("Applied Computer Science", columns, appliedCSRows)}
+                    {/* {generateTable("Artificial Intelligence", columns, aiRows)} */}
+                    {/* {generateTable("Data Analytics", columns, dataAnalyticsRows)} */}
+                    {/* {generateTable("Applied Computer Science", columns, appliedCSRows)} */}
                     {generateTable("Numerical Methods", columns, numMeth)}
                     {generateTable("Theoretical CS", columns, theoCS)}
             </div>
