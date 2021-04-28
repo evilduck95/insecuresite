@@ -34,12 +34,20 @@ const vrRows = [
 
 const bigDataRows = [
     {id: 11, strand: 'Big Data', task: 'Big Data Project', deadline: '24/05/2021', percent: '50%'},
-    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: 'Unknown as of 22/04/2021', percent: '50%'}
+    {id: 12, strand: 'Big Data', task: 'Class Test', deadline: '27/05/2021', percent: '50%'}
 ]
 
 const iotRows = [
     {id: 13, strand: 'IoT', task: 'IoT Project', deadline: '24/05/2021', percent: '75%'},
-    {id: 14, strand: 'IoT', task: 'Class Test', deadline: 'Unknown as of 22/04/2021', percent: '25%'}
+    {id: 14, strand: 'IoT', task: 'Class Test', deadline: '03/06/2021', percent: '25%'}
+]
+
+const numMeth = [
+    {id: 13, strand: 'Numerical Methods', task: 'Class Test', deadline: '13/05/2021', percent: '100%'}
+]
+
+const theoCS = [
+    {id: 13, strand: 'Theoretical CS', task: 'Class Test', deadline: '20/05/2021', percent: '100%'}
 ]
 
 
@@ -107,6 +115,8 @@ const HomePage = () => {
                     {generateTable("Artificial Intelligence", columns, aiRows)}
                     {generateTable("Data Analytics", columns, dataAnalyticsRows)}
                     {generateTable("Applied Computer Science", columns, appliedCSRows)}
+                    {generateTable("Numerical Methods", columns, numMeth)}
+                    {generateTable("Theoretical CS", columns, theoCS)}
             </div>
         </div>
     );
