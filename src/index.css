@@ -45,9 +45,17 @@ body {
 /* Mobile */
 @media only screen and (max-width: 1000px) {
   .important-dates {
-    margin: auto;
+    margin: auto 2vw;
+    
     margin-top: 50px;
+    background-position: 0;
   }
+  .background {
+    height: auto;
+    background-size: 100vh;
+    background-position: -60vw;
+  }
+ 
 }
 
 /* Desktop */
