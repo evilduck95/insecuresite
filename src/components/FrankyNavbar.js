@@ -18,11 +18,11 @@ const FrankyNavbar = (props) => {
                 </Nav>
                 <Nav className='ml-auto'>
                     <Nav.Link href='/files'>Shared Public Files</Nav.Link>
+                    <Nav.Link href='/upload'>Upload Files</Nav.Link>
                 </Nav>
             </Navbar>
         </div>
     )
-
 }
 
 export default FrankyNavbar;

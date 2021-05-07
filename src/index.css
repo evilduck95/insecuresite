@@ -13,10 +13,11 @@ body {
   overflow: auto;
   position: relative;
   background-color: #557799;
-  background-image: url("media/coding-bg.jpg");
+  background-image: url("media/ducky.jpg");
+  background-position: -10vw;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  /* height: 200vh; */
+  height: 100vw;
 }
 
 .contained {
@@ -57,6 +58,7 @@ body {
     width: 60vw;
     margin: auto;
     margin-top: 20px;
+    margin-left: 2vw;
   }
   .table th {
     padding: .5rem;
