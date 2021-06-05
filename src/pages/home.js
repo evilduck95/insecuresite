@@ -50,6 +50,10 @@ const theoCS = [
     {id: 13, strand: 'Theoretical CS', task: 'Class Test', deadline: '20/05/2021', percent: '100%'}
 ]
 
+const fin = [
+    {id: 100, strand: 'Home', task: 'Do Nothing', deadline: 'Never', percent: 'Who Cares?'}
+]
+
 
 const generateTable = (name, columns, data) => {
     return(
@@ -109,14 +113,7 @@ const HomePage = () => {
         <div className="background">
             <div className="blurred-layer">
                 <FrankyNavbar/>
-                    {generateTable("Internet of Things", columns, iotRows)}
-                    {generateTable("Big Data", columns, bigDataRows)}
-                    {generateTable("Virtual Reality", columns, vrRows)}
-                    {generateTable("Numerical Methods", columns, numMeth)}
-                    {generateTable("Theoretical CS", columns, theoCS)}
-                    {generateTable("Artificial Intelligence", columns, aiRows)}
-                    {generateTable("Data Analytics", columns, dataAnalyticsRows)}
-                    {generateTable("Applied Computer Science", columns, appliedCSRows)}
+                    {generateTable("Internet of Things", columns, fin)}
             </div>
         </div>
     );
