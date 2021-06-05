@@ -113,7 +113,7 @@ const HomePage = () => {
         <div className="background">
             <div className="blurred-layer">
                 <FrankyNavbar/>
-                    {generateTable("Internet of Things", columns, fin)}
+                    {generateTable("Wooo", columns, fin)}
             </div>
         </div>
     );
