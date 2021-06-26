@@ -50,6 +50,10 @@ const theoCS = [
     {id: 13, strand: 'Theoretical CS', task: 'Class Test', deadline: '20/05/2021', percent: '100%'}
 ]
 
+const dissertation = [
+    {id: 1, strand: 'Computer Science', task: 'Do a Dissertation', deadline: 'October', percent: '100%'}
+]
+
 const fin = [
     {id: 100, strand: 'Home', task: 'Do Nothing', deadline: 'Never', percent: 'Who Cares?'}
 ]
@@ -113,7 +117,7 @@ const HomePage = () => {
         <div className="background">
             <div className="blurred-layer">
                 <FrankyNavbar/>
-                    {generateTable("Internet of Things", columns, fin)}
+                    {generateTable("Dissertation", columns, dissertation)}
             </div>
         </div>
     );
