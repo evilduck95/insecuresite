@@ -118,6 +118,7 @@ const HomePage = () => {
             <div className="blurred-layer">
                 <FrankyNavbar/>
                     {generateTable("Dissertation", columns, dissertation)}
+
             </div>
         </div>
     );
